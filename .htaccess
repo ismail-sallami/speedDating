@@ -1,0 +1,16 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^hitchme\.de$ [NC]
+RewriteRule ^(.*)$ https://www.hitchme.de$1 [R=301,L]
+
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://www.hitchme.de$1 [R=301,L]
+
+RewriteCond %{HTTP:Accept-Language} (de) [NC]
+RewriteRule ^$ https://www.hitchme.de/de/index.php [L]
+
+RewriteCond %{HTTP:Accept-language} !^(de).* [NC]
+RewriteRule ^$ https://www.hitchme.de/en/index.php [L]
+
+ErrorDocument 404 /en/error.php
+

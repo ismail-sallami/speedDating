@@ -1,0 +1,402 @@
+<?php
+/*
+UserCake Version: 2.0.2
+http://usercake.com
+*/
+
+/*
+%m1% - Dymamic markers which are replaced at run time by the relevant index.
+*/
+$lang = array();
+
+//Account
+$lang = array_merge($lang,array(
+	"NAME" => "EN",
+	"HTML_TITLE" => "We link hearts",
+	"ACCOUNT_SPECIFY_USERNAME" 		=> "Please enter your username",
+	"ACCOUNT_SPECIFY_PASSWORD" 		=> "Please enter your password",
+	"ACCOUNT_SPECIFY_EMAIL"			=> "Please enter your email address",
+	"ACCOUNT_INVALID_EMAIL"			=> "Invalid email address",
+	"ACCOUNT_USER_OR_EMAIL_INVALID"		=> "Username or email address is invalid",
+	"ACCOUNT_USER_OR_PASS_INVALID"		=> "Username or password is invalid",
+	"ACCOUNT_ALREADY_ACTIVE"		=> "Your account is already activated",
+	"ACCOUNT_INACTIVE"			=> "Your account is in-active. Check your emails / spam folder for account activation instructions",
+	"ACCOUNT_USER_CHAR_LIMIT"		=> "Username must be between %m1% and %m2% characters",
+	"ACCOUNT_DISPLAY_CHAR_LIMIT"		=> "Display name must be between %m1% and %m2% characters",
+	"ACCOUNT_PASS_CHAR_LIMIT"		=> "Password must be between %m1% and %m2% characters",
+	"ACCOUNT_TITLE_CHAR_LIMIT"		=> "Titles must be between %m1% and %m2% characters in length",
+	"ACCOUNT_PASS_MISMATCH"			=> "Password and confirmation password must match",
+	"ACCOUNT_DISPLAY_INVALID_CHARACTERS"	=> "Display name can only include alpha-numeric",
+	"ACCOUNT_USERNAME_IN_USE"		=> "Username %m1% is already in use",
+	"ACCOUNT_DISPLAYNAME_IN_USE"		=> "Display name %m1% is already in use",
+	"ACCOUNT_EMAIL_IN_USE"			=> "Email %m1% is already in use",
+	"ACCOUNT_LINK_ALREADY_SENT"		=> "An activation email has already been sent to this email address in the last %m1% hour(s)",
+	"ACCOUNT_NEW_ACTIVATION_SENT"		=> "We have emailed you a new activation link, please check your email",
+	"ACCOUNT_SPECIFY_NEW_PASSWORD"		=> "Please enter your new password",
+	"ACCOUNT_SPECIFY_CONFIRM_PASSWORD"	=> "Please confirm your new password",
+	"ACCOUNT_NEW_PASSWORD_LENGTH"		=> "New password must be between %m1% and %m2% characters",
+	"ACCOUNT_PASSWORD_INVALID"		=> "Current password doesn't match the one we have on record",
+	"ACCOUNT_DETAILS_UPDATED"		=> "Account details updated",
+	"ACCOUNT_ACTIVATION_MESSAGE"		=> "You will need to activate your account before you can login. Please follow the link below to activate your account. \n\n
+	%m1%activate-account.php?token=%m2%",
+	"ACCOUNT_ACTIVATION_COMPLETE"		=> "You have successfully activated your account. You can now login <a href=\"en/login.php\">here</a>.",
+	"ACCOUNT_REGISTRATION_COMPLETE_TYPE1"	=> "You have successfully registered. <br>You can now login <a href=\"en/login.php\">here</a>.",
+	"ACCOUNT_REGISTRATION_COMPLETE_TYPE2"	=> "You have successfully registered. You will soon receive an activation email. 
+	You must activate your account before logging in.",
+	"ACCOUNT_PASSWORD_NOTHING_TO_UPDATE"	=> "You cannot update with the same password",
+	"ACCOUNT_PASSWORD_UPDATED"		=> "Account password updated",
+	"ACCOUNT_EMAIL_UPDATED"			=> "Account email updated",
+	"ACCOUNT_TOKEN_NOT_FOUND"		=> "Token does not exist / Account is already activated",
+	"ACCOUNT_USER_INVALID_CHARACTERS"	=> "Username can only include alpha-numerics",
+	"ACCOUNT_DELETIONS_SUCCESSFUL"		=> "You have successfully deleted %m1% users",
+	"ACCOUNT_MANUALLY_ACTIVATED"		=> "%m1%'s account has been manually activated",
+	"ACCOUNT_DISPLAYNAME_UPDATED"		=> "Displayname changed to %m1%",
+	"ACCOUNT_TITLE_UPDATED"			=> "%m1%'s title changed to %m2%",
+	"ACCOUNT_PERMISSION_ADDED"		=> "Added access to %m1% permission levels",
+	"ACCOUNT_PERMISSION_REMOVED"		=> "Removed access from %m1% permission levels",
+	"ACCOUNT_INVALID_USERNAME"		=> "Invalid username",
+));
+
+//Configuration
+$lang = array_merge($lang,array(
+	"CONFIG_NAME_CHAR_LIMIT"		=> "Site name must be between %m1% and %m2% characters in length",
+	"CONFIG_URL_CHAR_LIMIT"			=> "Site name must be between %m1% and %m2% characters in length",
+	"CONFIG_EMAIL_CHAR_LIMIT"		=> "Site name must be between %m1% and %m2% characters in length",
+	"CONFIG_ACTIVATION_TRUE_FALSE"		=> "Email activation must be either `true` or `false`",
+	"CONFIG_ACTIVATION_RESEND_RANGE"	=> "Activation Threshold must be between %m1% and %m2% hours",
+	"CONFIG_LANGUAGE_CHAR_LIMIT"		=> "Language path must be between %m1% and %m2% characters in length",
+	"CONFIG_LANGUAGE_INVALID"		=> "There is no file for the language key `%m1%`",
+	"CONFIG_TEMPLATE_CHAR_LIMIT"		=> "Template path must be between %m1% and %m2% characters in length",
+	"CONFIG_TEMPLATE_INVALID"		=> "There is no file for the template key `%m1%`",
+	"CONFIG_EMAIL_INVALID"			=> "The email you have entered is not valid",
+	"CONFIG_INVALID_URL_END"		=> "Please include the ending / in your site's URL",
+	"CONFIG_UPDATE_SUCCESSFUL"		=> "Your site's configuration has been updated. You may need to load a new page for all the settings to take effect",
+));
+
+//Forgot Password
+$lang = array_merge($lang,array(
+	"FORGOTPASS_INVALID_TOKEN"		=> "Your security token is not valid",
+	"FORGOTPASS_NEW_PASS_EMAIL"		=> "We have emailed you a new password",
+	"FORGOTPASS_REQUEST_CANNED"		=> "Lost password request cancelled",
+	"FORGOTPASS_REQUEST_EXISTS"		=> "There is already a outstanding lost password request on this account",
+	"FORGOTPASS_REQUEST_SUCCESS"		=> "We have emailed you instructions on how to regain access to your account",
+));
+
+//Mail
+$lang = array_merge($lang,array(
+	"MAIL_ERROR"				=> "Fatal error attempting mail, contact your server administrator",
+	"MAIL_TEMPLATE_BUILD_ERROR"		=> "Error building email template",
+	"MAIL_TEMPLATE_DIRECTORY_ERROR"		=> "Unable to open mail-templates directory. Perhaps try setting the mail directory to %m1%",
+	"MAIL_TEMPLATE_FILE_EMPTY"		=> "Template file is empty... nothing to send",
+));
+
+//Miscellaneous
+$lang = array_merge($lang,array(
+	"CAPTCHA_FAIL"				=> "Failed security question",
+	"CONFIRM"				=> "Confirm",
+	"DENY"					=> "Deny",
+	"SUCCESS"				=> "Success",
+	"ERROR"					=> "Error",
+	"NOTHING_TO_UPDATE"			=> "Nothing to update",
+	"SQL_ERROR"				=> "An error has occurred please try again later or contact us",
+	"FEATURE_DISABLED"			=> "This feature is currently disabled",
+	"PAGE_PRIVATE_TOGGLED"			=> "This page is now %m1%",
+	"PAGE_ACCESS_REMOVED"			=> "Page access removed for %m1% permission level(s)",
+	"PAGE_ACCESS_ADDED"			=> "Page access added for %m1% permission level(s)",
+));
+
+//Permissions
+$lang = array_merge($lang,array(
+	"PERMISSION_CHAR_LIMIT"			=> "Permission names must be between %m1% and %m2% characters in length",
+	"PERMISSION_NAME_IN_USE"		=> "Permission name %m1% is already in use",
+	"PERMISSION_DELETIONS_SUCCESSFUL"	=> "Successfully deleted %m1% permission level(s)",
+	"PERMISSION_CREATION_SUCCESSFUL"	=> "Successfully created the permission level `%m1%`",
+	"PERMISSION_NAME_UPDATE"		=> "Permission level name changed to `%m1%`",
+	"PERMISSION_REMOVE_PAGES"		=> "Successfully removed access to %m1% page(s)",
+	"PERMISSION_ADD_PAGES"			=> "Successfully added access to %m1% page(s)",
+	"PERMISSION_REMOVE_USERS"		=> "Successfully removed %m1% user(s)",
+	"PERMISSION_ADD_USERS"			=> "Successfully added %m1% user(s)",
+	"CANNOT_DELETE_NEWUSERS"		=> "You cannot delete the default 'new user' group",
+	"CANNOT_DELETE_ADMIN"			=> "You cannot delete the default 'admin' group",
+));
+
+$lang = array_merge($lang,array(
+//Login
+	"USERNAME" => "Username",
+	"PASSWORD" => "Password",
+	"NO_ACCOUNT" => "Don't have an account yet ? ",
+	"REGISTER" => "Register",
+	"FORGOT_PASSWORD" => "Forgot password ?",
+
+//MENU
+
+	"MENU_HOME" => "Home",
+	"MENU_ABOUT_US" => "About Us",
+	"MENU_OUR_PRODUCTS" => "Our products",
+	"MENU_CONTACT_US" => "Contact Us",
+	"MENU_ADVERTISE" => "Advertise",
+	"MENU_SITE_MAP" => "Site Map",
+	"MENU_WE_ARE_HIRING" => "We are hiring",
+	"MENU_TERMS" => "Terms of use",
+	"MENU_PRIVACY" => "Privacy policy",
+
+
+//Index.php
+	"BOOK_SPEED_DATING" => "Book speed dating",
+	"SLIDE1_H1" => "Get ready for the big night",
+	"SLIDE1_H21" => "Meet 10 people in 1 night",
+	"SLIDE1_H22" => "Cosy places, nice events",
+	"SLIDE1_H23" => "Find the match of your soul",
+	
+	"SLIDE2_H1" => "Events for German and English speakers",
+	"SLIDE2_H21" => "The first speed dating events for english speakers",
+	
+	"SLIDE3_H1" => "No more single",
+	"SLIDE3_H21" => "Meet single people of all the ages and find your harmony match",
+	"HOW_IT_WORKS" => "How does it work",
+	"STEP1_H2" => "Fill your profile",
+	"STEP1_H3" => "Subscribe and fill your profile. Upload some photos and tell us about yourself.",
+	"STEP2_H2" => "Choose your event",
+	"STEP2_H3" => "Come to the evening meeting and find new 10 pleasant persons.",
+	"STEP3_H2" => "Talk with pleasure",
+	"STEP3_H3" => "Enjoy a 7 minutes conversation. When the time expires, the sides change.",
+	"STEP4_H2" => "Play love",
+	"STEP4_H3" => "Take notes during the meeting and rate later those who you like more.",
+	"STEP5_H2" => "Find out sympathy",
+	"STEP5_H3" => "Get notifications of the mutual sympathies and get ready for meeting them",
+	"STEP6_H2" => "Meet your match",
+	"STEP6_H3" => "Just call the person with whom you have coincided sympathy and plan the next meeting together.",
+	
+	"WHY_SPEEDDATE" => "Why you should speeddate",
+	"WHY1" => "You don't have free time",
+	"WHY2" => "You don't trust dating sites or disappointed by them",
+	"WHY3" => "You don't know where to meet",
+	"WHY4" => "You lost bunch of money and time on hopeless meetings",
+	"WHY5" => "10-15 interesting meetings for just 1 night. Each meeting at 7 minutes - enough time to decide on sympathy",
+	"WHY6" => "Real people and have a specific purpose - to meet you! There is no virtual companions",
+	"WHY7" => "Meeting in cozy places in the heart of the city, creating comfortable atmosphere for easy dialogue",
+	"WHY8" => "We guarantee no strangers at our events",
+	"WHY9" => "We respect our members' privacy",
+	"WHY10" => "Minimum cost - Maximum result",
+	
+	"PARTNER_SOMEWHERE" => "Your partner is waiting somewhere",
+	"SUPPORT_TITLE" => "Have a question or need a customer support?",
+	"SUPPORT_TEXT" => "If you have a question  or you need a support please write us<a href='mailto:contact@hitchme.de?Subject=Contact' target='_top'> an email </a>or call +49 (0) 176 85 655 877",
+	
+//UserCake & Admin
+	"NEW_EVENT_ADDED"			=> "Congratulation, New event added successfully",
+	"NEW_SPRINT_ADDED"			=> "Congratulation, New sprint added successfully",
+	"SPRINT_DELETIONS_SUCCESSFUL" => "%m1% Sprint(s) deleted successfully",
+
+//Menu bar
+	"RATINGS" => "My ratings",
+	"MATCHES" => "My matches",
+	"MESSAGE" => "Messages",
+	"SETTINGS" => "User Settings",
+	"EDIT" => "Edit profile",
+	"LOGOUT" => "Logout",
+	"CONTACT" => " Contact",
+	"LOGIN" => "Login",
+	"WELCOME" => "Welcome",
+	"NEW_EVENT" => "New event",
+	"NEW_SPRINT" => "New sprint",
+	"DISPLAY_SPRINT" => "Display sprint",
+//SpeedDating
+	"DATE" => "Date",
+	"TIME" => "Time",
+	"LANGUAGE" => "Language",
+	"AGE" => "Age",
+	"LOCATION" => "Location",
+	"FEE" => "Fee",
+	"BOOK" => "Book",
+	"AVAILABLE" => "Places",
+	"READY_TO_START_TITLE" => "Ready to get started?",
+	"READY_TO_START_TEXT" => "<p>1. We have no special dress code. Dress freely and comfortably. In the clothes in which you will start up in a cafe / restaurant. The main rule on any date - be neat!</p>
+                            <p>2. Come in a good mood! For positive - it's one of the keys to success with the opposite sex!</p>",
+
+//Book_sprint
+	"PAYMENT" => "Payment",
+	"PAYMENT_CC" => "Payment with CreditCard",
+	"PAYMENT_PP" => "Payment with PayPal",
+	"PP_PAYMENT_ACCEPTED" => "PayPal payment accepted successfully",
+	"PP_PAYMENT_PENDING" => "PayPal payment is pending, you will get notified once we receive it",
+	"PP_PAYMENT_CANCELLED" => "PayPal payment was cancelled",
+	"PP_PAYMENT_ERROR" => "Sorry, An error has occured while payment, please try again later or contact us",
+
+	"FROM" => "From",
+	"SPRINT_PLAN_1" => "Reception of participants",
+	"SPRINT_PLAN_2" => "Explanation and introduction to the Speed ​​Dating",
+	"SPRINT_PLAN_3" => "Beginning of the first speed dating round",
+	"SPRINT_PLAN_4" => "End of the last Speed ​​Dating Round",
+	"SPRINT_PLAN_5" => "Participants spontaneous meeting (optional)",
+
+//Payment
+	"DETAIL" => "Payment details",
+	"VALID_NUMBER" => "Valid Card Number",
+	"NUMBER" => "CARD NUMBER",
+	"EXPIRATION" => "EXPIRATION DATE",
+	"COUPON" => "COUPON CODE",
+	"SUBMIT_PAYMENT" => "Submit Payment",
+	"YY" => "YY",
+	"PAYMENT_SUCCESS" => "<strong>Thank you!</strong> Payment received successfully.",
+  
+//Edit profile
+	"PROFILE_UPDATED" => "Profile updated successfully",
+	"FIRST_NAME_EMPTY" => "First name is empty",
+	"LAST_NAME_EMPTY" => "Last name is empty",
+	"PHONE_EMPTY" => "Phone is empty",
+	"BDATE_EMPTY" => "Birth date is empty",
+	"GENDER_EMPTY" => "Please select your gender",
+	"PROFILE_PIC_EMPTY" => "Select your profile picture",
+	"PICS_EMPTY" => "Upload some pictures",
+	"DELETE_PROFILE_PIC" => "You cannot delete profile picture",
+	
+	"BASIC_INFO" => "Basic informations",
+	"PUBLIC_PROFILE" => "Public profile",
+	"INTERESTS" => "Interests",
+	"FOTOS" => "Fotos",
+	"F_NAME" => "First name",
+	"L_NAME" => "Last name",
+	"FULL_NAME" => "Full name",
+	"BIRTH" => "Date of birth",
+	"PHONE" => "Phone number",
+	"GENDER" => "Gender",
+	"SELECT_GENDER" => "Select gender",
+	"MAN" => "Man",
+	"WOMAN" => "Woman",
+	"EYES" => "Eyes color",
+	"HAIR" => "Hair color",
+	"HEIGHT" => "Height",
+	"MARITAL" => "Marital Situation",
+	"KIDS" => "Kids",
+	"SMOKING" => "Smoking",
+	"DRINKING" => "Drinking",
+	"YES" => "Yes",
+	"NO" => "No",
+	"SOCIALLY" => "Socially",
+	"BROWN" => "Brown",
+	"BLUE" => "Blue",
+	"GREEN" => "Green",
+	"BLACK" => "Black",
+	"GREY" => "Grey",
+	"OTHER" => "Other",
+	"WHITE" => "White",
+	"RED" => "Red",
+	"BLOND" => "Blond",
+	"SEPERATED" => "Seperated",
+	"SINGLE" => "Single",
+	"DIVORCED" => "Divorced",
+	"WIDOWED" => "Widowed",
+	"HOBBIES" => "Hobbies",
+	"BOOKS" => "Books I like",
+	"MUSIC" => "Music",
+	"MOVIES" => "Movies & TV shows",
+	"MORE_ABOUT_ME" => "More about me",
+	
+	"PROFILE_PIC" => "Profile picture",
+	"DELETE_PIC" => "Delete picture",
+	
+	"BROWSE" => "Browse",
+	"UPLOAD" => "Upload",
+	"SUBMIT" => "Submit",
+	"VIEW_PROFILE" => "View profile",
+	"IMAGE_STEP_1" => "Step1: Please select image file",
+	"IMAGE_STEP_2" => "Step2: Please select a crop region",
+	"ERROR_CROP" => "Please select a crop region and then press Upload",
+	"ERROR_VALID_IMAGE" => "Please select a valid image file (jpg and png are allowed)",
+	"ERROR_SIZE" => "You have selected too big file, please select a one smaller image file",
+
+//Message
+	"MESSAGES_DELETIONS_SUCCESSFUL"		=> "You have successfully deleted %m1% message",
+	"NO_SELECTED_MESSAGES" => "No selected messages to delete",
+
+// table.js
+	"SEARCH_LABEL" => "Search:",
+	"SHOWING" => "Showing _START_ to _END_ of _TOTAL_ entries", //Translate only Showing , to , of , entries
+	"SHOWING_0" => "Showing 0 to 0 of 0 entries",
+	"DELETE" => "Delete",
+	"TITLE" => "Title",
+	"NO_DATA" => "No data available in table",
+
+
+//view profile
+	"INVITATION_SENT" => "You invitation had been sent, you will get notified as soon as %m1% answers",
+//User settings
+  "EMAIL" => "Email",
+  "NEW_PASS" =>  "New Password",
+  "CONFIRM_PASS" => "Confirm Password",
+  "UPDATE" => "Update",
+  
+//rating
+	"RATES_SAVED" => "Decisions saved successfully",
+	"CONGRATULATION_MATCH_FOUND" => "Congratulation, You have a match",
+	"I_LIKE" => "I like",
+
+//Stripe error
+	"incorrect_number" => "The card number is incorrect.",
+	"invalid_number"=> "The card number is not a valid credit card number",
+	"invalid_expiry_month" => "The expiration month is invalid",
+	"invalid_expiry_year" => "The expiration year is invalid",
+	"invalid_cvc" => "The security code is invalid",
+	"expired_card" => "The card has expired",
+	"incorrect_cvc" => "The security code is incorrect",
+	"incorrect_zip" => "The zip code failed validation",
+	"card_declined" => "The card was declined",
+	"missing" => "There is no card on a customer that is being charged",
+	"processing_error" => "An error occurred while processing the card",
+	"rate_limit" =>  "An error occurred due to requests hitting the API too quickly. Please let us know if you're consistently running into this error",
+//Contact us
+	"DROP_YOUR_MESSAGE" => "Drop Your Message",
+	"ADDRESS" => "Address",
+	"SUBJECT" => "Subject",
+	"MESSAGE" => "Message",
+	"SUBMIT_MESSAGE" => "Submit Message",
+	"SUCCESS_MESSAGE" => "Thank you for contact us. As early as possible  we will contact you",
+
+//Extra
+	"WELCOME_TITLE" => "Welcome to HitchMe",
+	"WELCOME_BODY" => "Dear new member, <br><br>Thank you for subscribing in HitchMe, <br> Your next step is to <a href='en/edit_profile.php'>fill your profile</a> and upload some pictures.<br>Browse the available meetings and book some of them depending on your age and availability.
+						<br>Feel free to contact us if you need any support or extra information.<br><br>Best Regards,<br>HitchMe team",
+	"NO_SPRINT_YET" => "You didn't join any event yet, please <a href='en/events-list.php'>select some meetings </a>and join us to meet many interesting single people",
+	"NO_MATCHES_YET" => "No matches yet, this may take a while till the other participants enter their choices.<br>",
+	"UPCOMING_EVENT" => "Your upcoming events",
+	"CANCEL" => "Cancel",
+	"SPRINT_CANCELLED" => "Event booking cancelled",
+	"NO_UPCOMING_EVENT" => "You have no upcoming event, you can book speed-dating events <a href='en/events-list.php'>here</a>.",
+	"NOT_PUBLIC" => "Not showing publicly",
+	"EMPTY_PROFILE" => "<strong>Empty profile ! </strong>No data entered yet.",
+	"EVENT_DETAILS" => "Your event details",
+	"INVITATION_RESPOND" => "Thank you for responding to the invitation.",
+	"INVITE_ME" => "Invite Me",
+	"PLEASE_LOGIN" => "Please login or <a href='register.php'>register</a> to continue.",
+	"I_AM" => "I am",
+	"LOOKING_FOR" => "Looking for",
+
+//Invite
+	"NO_DATA" => "No data found",
+	"BETWEEN" => "Between",
+	"AND" => "And",
+	"FIND" => "Find",
+//booking error
+	"NO_MORE_MEN" => "No more available places for gentlemen for this round, please choose another event.",
+	"NO_MORE_WOMEN" => "No more available places for ladies for this round, please choose another event.",
+	"EMPTY_PROFILE" => "Please fill your profile before booking.",
+
+
+//Register
+	"CONFIRM" => "Confirm",
+	"SECURITY_CODE" => "Security Code",
+	"ENTER_SECURITY" => "Enter Security Code",
+	"I_ACCEPT" => "I accept",
+	"TERMS" => "the terms of use",
+	"ACCEPT_TERMS" => "Please accept the terms of use",
+
+//EXTRA
+	"NEW_MATCH_TITLE" => "Congratulation, You have a new match",
+	"NEW_MATCH_BODY" => "Congratulation, you have a mutual harmony with %m1% , get in touch with match and organise a date. If you get any issue during contacting your match, please let us know so we can react and help.<br>Your HitchMe Team ",
+
+
+	//check payment section for new entries
+
+	//SQL_ERROR update !!!
+));
