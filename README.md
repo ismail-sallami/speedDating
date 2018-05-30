@@ -1,6 +1,7 @@
 # speedDating
 A complete speed Dating PHP plateform.
 This project uses many JS libraries such as : Bootstrap, Crop, jQuery; ninja Slider, ...
+
 The project shows how to 
 * Implement Stripe as a paymenent gateway
 * Implement Captcha from scratch.
